@@ -3,7 +3,7 @@
 ![Image](https://github.com/user-attachments/assets/ad8da1a3-4fff-4af2-bd17-cdd14d39da67)
 
 
-<h1> Deploying Active Directory, creating Admin Users and joining other computers to the domain</h1>
+<h1> Deploying Active Directory, creating Admin Users and adding other computers to the domain</h1>
 This guide outlines the process for installing  Active Directory and showing some use cases like group policy and account management. <br />
 
 
