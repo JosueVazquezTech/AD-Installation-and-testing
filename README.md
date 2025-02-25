@@ -70,7 +70,7 @@ Now to make sure everything we did is working we have to logout and log back in,
 
 Now we can start using Active Directory, you can find it a couple of different ways: you can open the "Run" app and type "dsa.msc", you can also find it in the Start Menu under Administrative tools or just search it in the windows search bar. Open Active Directory Users and Computers and you should see the domain we created followed by many other folders. These folders are called Organizational Units (OU), think of them as containers within our domain that we can use to organize and manage objects such as users, groups, and computers. You can also use the OUs to help apply policies to large groups of users, delegate administrative control, and maintain a structured hierarchy. 
 
-We will create 2 new Organizational units for our regular employees and another one for admin users. To do this right click on the domain, then click New and then click Organizational Unit. We will name the first one **_EMPLOYEES** and click ok. Then we will repeat the process and create another OU and name it **_ADMINS**. 
+We will create 2 new Organizational units for our regular employees and another one for admin users. To do this right-click on the domain, then click New, and then click Organizational Unit. We will name the first one **_EMPLOYEES** and click ok. Then we will repeat the process and create another OU and name it **_ADMINS**. 
 
 ![Image](https://github.com/user-attachments/assets/142392ea-3c89-40bd-b252-018ae1d33582)
 
@@ -79,6 +79,12 @@ We will create 2 new Organizational units for our regular employees and another 
 ![Image](https://github.com/user-attachments/assets/c95d1df1-2fde-4158-9715-5791a9fafe3f)
 
 ![Image](https://github.com/user-attachments/assets/0515a9cd-6aa1-4c38-b47c-a3642550878b)
+
+Now we are gonna create a new Admin User, right-click in the _ADMINS OU we created, then click New, and then click User. Then you will be prompted to add a name, last name, and user login for this account. I choose Jane Doe as the name and last name and my user login will be **jane_admin**. Remember that to log into this account you will still have to add the domain context for the username, so when logging in the username should be **mydomain.com\jane_admin**
+
+
+
+
 
 
 
