@@ -46,7 +46,22 @@ The first thing we are going to do is installing Active Directory in our DC virt
 
 ![Image](https://github.com/user-attachments/assets/a03f61f4-e3c5-4628-a403-7a02a9ee7717)
 
-Now it's time to promote our server to Domain Controller. Until now our VM has been a domain controller only in name, we don't have any of the functions of a Domain Controller. After promoting the server we will be able to Authorize, Authenticate accounts, and enforce Group Policies among other things. To do this, go to the Server Manager Dashboard, and on the top right corner you should see a flag letting you know that a configuration is required, open it and then click "promote this server to a domain controller". In the Deployment Configuration window check "add a new forest" and on the Root domain name we will create our domain, mine will be called "mydomain.com
+Now it's time to promote our server to Domain Controller. Until now our VM has been a domain controller only in name, we don't have any of the functions of a Domain Controller. After promoting the server we will be able to Authorize, Authenticate accounts, and enforce Group Policies among other things. To do this, go to the Server Manager Dashboard, and on the top right corner you should see a flag letting you know that a configuration is required, open it and then click "promote this server to a domain controller". In the Deployment Configuration window check "add a new forest" and on the Root domain name we will create our domain, mine will be called **mydomain.com**. On the next page Domain Name System (DNS) server and Global Catalog (GC) should be checked by default. Here we will also create the password for our domain and then click next. On the DNS Options page leave "Create DNS delegation" unchecked and you can keep clicking next until you get to the Prerequisites Check. After all prerequisite checks have passed you should be able to click install. 
+
+![Image](https://github.com/user-attachments/assets/c7d1e406-7db3-4346-b7f7-61aa2a00c097)
+
+![Image](https://github.com/user-attachments/assets/c9021646-e598-45f0-a5ff-a2e076022438)
+
+![Image](https://github.com/user-attachments/assets/cd841378-112a-40f6-87c8-9c61f2bb85e7)
+
+![Image](https://github.com/user-attachments/assets/d53824ed-161a-4e70-aaf6-f871d42ed263)
+
+![Image](https://github.com/user-attachments/assets/0ac52a39-51da-49b3-8d0d-29808aca82ee)
+
+![Image](https://github.com/user-attachments/assets/a9bf7bfd-c493-46c0-b299-abee1135288f)
+
+
+
 
 
 
