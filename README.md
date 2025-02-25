@@ -80,7 +80,34 @@ We will create 2 new Organizational units for our regular employees and another 
 
 ![Image](https://github.com/user-attachments/assets/0515a9cd-6aa1-4c38-b47c-a3642550878b)
 
-Now we are gonna create a new Admin User, right-click in the _ADMINS OU we created, then click New, and then click User. Then you will be prompted to add a name, last name, and user login for this account. I choose Jane Doe as the name and last name and my user login will be **jane_admin**. Remember that to log into this account you will still have to add the domain context for the username, so when logging in the username should be **mydomain.com\jane_admin**
+Now we are gonna create a new Admin User, right-click in the _ADMINS OU we created, then click New, and then click User. Then you will be prompted to add a name, last name, and user login for this account. I choose Jane Doe as the name and last name and my user login will be **jane_admin**. Remember that to log into this account you will still have to add the domain context for the username, so when logging in the username should be **mydomain.com\jane_admin**. Click next and then type a new password for this account, in a normal work environment you might check "User must change password at next login" so the employee using this account can create their password but for this guide, we will leave it unchecked and click next. I created a se
+
+![Image](https://github.com/user-attachments/assets/be3cdf5f-2f25-421e-bd02-2cd767b43015)
+
+![Image](https://github.com/user-attachments/assets/85964598-bbaa-4855-8d8c-fafc99a66dcd)
+
+![Image](https://github.com/user-attachments/assets/12e810e1-1ff0-4733-98fc-cd7a2b255ee4)
+
+Now that we have a new user we can give it Domain Admin privileges, to do this right-click on the new user and click "Add to a group." On the pop-up window make sure that "From this location" is set to your domain name and on the text box write **Domain Admins** then click Check Names and OK. Now the Jane Doe account we created is also a Domain Admin. This will be our Domain Admin account from now on.
+
+![Image](https://github.com/user-attachments/assets/d906cda6-0676-47bc-9139-bda379c9a114)
+
+![Image](https://github.com/user-attachments/assets/a5dfdaee-f633-4388-8353-19a3bfbf8be3)
+
+<h3> Join Client1 virtual machine to our domain ans setup remote desktop access for non-administrative users on Client1</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
