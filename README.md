@@ -106,6 +106,25 @@ First, we will log into the Client1 virtual machine that we created at the begin
 
 ![Image](https://github.com/user-attachments/assets/82802563-f354-4d0c-9dd4-e973dbbdaddc)
 
+<h3> Enabling Remote Desktop Connection</h3>
+
+
+This will allow non admin users from the same domain to access Client1 computer remotely. To enable this go to the settings on your computer and then go to Remote Desktop or type "remote desktop" on the Windows search. After you get to the Remote Desktop window click on Advanced Options. Then, under User accounts click on "Select users that can remotely access this PC". In the pop-up window click add. On the new window make sure that the domain we created is listed under "from this location" and then under "Enter the object names to select" type "Domain Users" and click Check Names. You should see a new window listing the users that can access the computer remotely, click OK and you are all set up. Now anyone from our domain can access this computer remotely!
+
+
+![Image](https://github.com/user-attachments/assets/a65d6924-670d-41c8-986e-fd8646dd8ea1)
+
+![Image](https://github.com/user-attachments/assets/d2b2ff03-4303-4e17-b93c-7ab984098296)
+
+![Image](https://github.com/user-attachments/assets/a219e708-5080-4779-b88d-2bf299473c39)
+
+![Image](https://github.com/user-attachments/assets/a160ab71-981f-44b1-b4fb-b04aee4bd081)
+
+
+![Image](https://github.com/user-attachments/assets/0279c3e8-a455-4b38-ba38-518e4946ad3f)
+
+
+
 
 
 
