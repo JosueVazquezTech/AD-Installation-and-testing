@@ -94,7 +94,21 @@ Now that we have a new user we can give it Domain Admin privileges, to do this r
 
 ![Image](https://github.com/user-attachments/assets/a5dfdaee-f633-4388-8353-19a3bfbf8be3)
 
-<h3> Join Client1 virtual machine to our domain ans setup remote desktop access for non-administrative users on Client1</h3>
+<h3> Join Client1 virtual machine to the domain and setup remote desktop access for non-administrative users on Client1</h3>
+
+First, we will log into the Client1 virtual machine that we created at the beginning of this guide. Once we are logged in we will go to "Settings" and click About, under Related Settings we will click Rename this PC (advanced.) Then click Change... and under "Member of" you will check Domain and write your domain name on the text box. The reason we are able to do this is because previously we changed the DNS settings of Client1 to point to our Domain Controller, so when Client1 is looking up **mydomain.com** is getting directed to our server. After you click OK you will be prompted to enter the username and password of an account with permission to join the domain. Here we will use the Domain Admin account we just created, in my case is **mydomain.com\jane_admin**. Now the Client1 computer is part of our domain and we can login there as an Admin User. To test that everything we just did is working properly log back into DC1 virtual machine with the Jane Doe username, open Active Directory, and under the Computers OU you should see Client1 has joined.
+
+![Image](https://github.com/user-attachments/assets/b2f4c423-b962-4e15-acb1-6f3fea127f0b)
+
+![Image](https://github.com/user-attachments/assets/52dc29b2-e7ac-4a9e-9634-718fd001e5ff)
+
+![Image](https://github.com/user-attachments/assets/d2e6b395-ee87-4790-ba1a-0211e95e3d14)
+
+![Image](https://github.com/user-attachments/assets/82802563-f354-4d0c-9dd4-e973dbbdaddc)
+
+
+
+
 
 
 
