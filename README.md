@@ -3,7 +3,7 @@
 ![Image](https://github.com/user-attachments/assets/ad8da1a3-4fff-4af2-bd17-cdd14d39da67)
 
 
-<h1> Deploying Active Directory and testing some functions</h1>
+<h1> Deploying Active Directory, creating users and managing Group Policy</h1>
 This guide outlines the process for installing  Active Directory and showing some use cases like group policy and account management. <br />
 
 
@@ -59,6 +59,34 @@ Now it's time to promote our server to Domain Controller. Until now our VM has b
 ![Image](https://github.com/user-attachments/assets/0ac52a39-51da-49b3-8d0d-29808aca82ee)
 
 ![Image](https://github.com/user-attachments/assets/a9bf7bfd-c493-46c0-b299-abee1135288f)
+
+Now to make sure everything we did is working we have to logout and log back in, but instead of login into the local account we will log into the domain we just created. To do this in the login page when you are prompted to write your username you will write the domain name followed by a backslash followed by your username. It should look something like this: **mydomain.com\dclabuser**. After you log in you can go to the Settings page and go to "Your info" and you should see that you are logged into the domain as the Administrator. Now that we have Admin privileges we can create other Admin accounts, connect other computers to our domain, and many other useful things. 
+
+![Image](https://github.com/user-attachments/assets/2eb857bb-7536-4c31-8812-350e49e8f095)
+
+![Image](https://github.com/user-attachments/assets/2988d5a8-532a-41ed-8e02-eb00c76cd396)
+
+<h3> Creating a Domain Admin user within the domain</h3>
+
+Now we can start using Active Directory, you can find it a couple of different ways: you can open the "Run" app and type "dsa.msc", you can also find it in the Start Menu under Administrative tools or just search it in the windows search bar. Open Active Directory Users and Computers and you should see the domain we created followed by many other folders. These folders are called Organizational Units (OU), think of them as containers within our domain that we can use to organize and manage objects such as users, groups, and computers. You can also use the OUs to help apply policies to large groups of users, delegate administrative control, and maintain a structured hierarchy. 
+
+We will create 2 new Organizational units for our regular employees and another one for admin users. To do this right click on the domain, then click New and then click Organizational Unit. We will name the first one **_EMPLOYEES** and click ok. Then we will repeat the process and create another OU and name it **_ADMINS**. 
+
+![Image](https://github.com/user-attachments/assets/142392ea-3c89-40bd-b252-018ae1d33582)
+
+![Image](https://github.com/user-attachments/assets/36d539ea-d9e9-428c-9f13-a21b5eb739ad)
+
+![Image](https://github.com/user-attachments/assets/c95d1df1-2fde-4158-9715-5791a9fafe3f)
+
+![Image](https://github.com/user-attachments/assets/0515a9cd-6aa1-4c38-b47c-a3642550878b)
+
+
+
+
+
+
+
+
 
 
 
