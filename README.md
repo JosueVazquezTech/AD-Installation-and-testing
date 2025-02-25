@@ -3,8 +3,8 @@
 ![Image](https://github.com/user-attachments/assets/ad8da1a3-4fff-4af2-bd17-cdd14d39da67)
 
 
-<h1> Setting up Active Directory infrastructure in Azure </h1>
-This tutorial outlines preparing the Azure infrastructure before deploying our Active Directory Environment. <br />
+<h1> Deploying Active Directory and testing some functions</h1>
+This guide outlines the process for installing  Active Directory and showing some use cases like group policy and account management. <br />
 
 
 
@@ -13,7 +13,9 @@ This tutorial outlines preparing the Azure infrastructure before deploying our A
 
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop/Bastion
-- PowerShell (to test DNS server) 
+- Active Directory Users and Computers
+- Group Policy Management
+- Event Viewer 
 
 <h2>Operating Systems Used </h2>
 
@@ -22,13 +24,15 @@ This tutorial outlines preparing the Azure infrastructure before deploying our A
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
--  
-- 
-- 
-- 
-
+- Install Active Directory
+- Create a Domain Admin user within the domain
+- Join Client1 to the domain
+- Setup Remote Desktop for non-admin users on Client1
+- Group Policy and managing account
+  
 <h2>Setup and Configuration</h2>
 
+<h3> Installing Active Directory</h3>
 
 
 
