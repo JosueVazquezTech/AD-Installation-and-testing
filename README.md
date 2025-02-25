@@ -13,9 +13,7 @@ This guide outlines the process for installing  Active Directory and showing som
 
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop/Bastion
-- Active Directory Users and Computers
-- Group Policy Management
-- Event Viewer 
+- Active Directory Users and Computers 
 
 <h2>Operating Systems Used </h2>
 
